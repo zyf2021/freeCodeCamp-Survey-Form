@@ -11,15 +11,15 @@
     <form id="survey-form">
       <div>
         <label id="name-label">Name</label> 
-        <input id="name" type="text"/>
+        <input id="name" type="text" placeholder="Enter your name" require/>
       </div>
       <div>
         <label id="email-label">Email</label> 
-        <input id="email" type="email"/>
+        <input id="email" type="email" placeholder="Enter your email"/>
       </div>
       <div>
-        <label id="age-label">Age (optional)</label> 
-        <input id="age" type="number"/>
+        <label id="number-label">Age (optional)</label> 
+        <input id="number" type="number" min=14 max=95 placeholder="Enter your age"/>
       </div>
       <div>
         <label id="dropdown-label">Which option best describes your current role?</label> 
@@ -35,17 +35,17 @@
       <div>
         <label>Would you recommend freeCodeCamp to a friend?</label>
         <label><input type='radio' value='definitely'/> Definitely</label>
-        <label><input type='radio'/> Maybe</label>
-        <label><input type='radio'/> Not sure</label>
+        <label><input type='radio' value='maybe'/> Maybe</label>
+        <label><input type='radio' value='notsure'/> Not sure</label>
       </div>
       <div>
         <label>What is your favorite feature of freeCodeCamp?</label>
         <select>
-          <option>Select an option</option>
-          <option>Challenges</option>
-          <option>Projects</option>
-          <option>Community</option>
-          <option>Open Sources</option>
+          <option value='0'>Select an option</option>
+          <option value='1'>Challenges</option>
+          <option value='2'>Projects</option>
+          <option value='3'>Community</option>
+          <option value='4'>Open Sources</option>
         </select>
       </div>
       <div>
@@ -62,8 +62,11 @@
         <label><input type='checkbox'/> Forum</label>
         <label><input type='checkbox'/> Additional Courses</label>
       </div>
-      <label></label>
-      <textarea placeholder='Enter yiur comment here'></textarea>
+      <div>
+        <label></label>
+        <textarea placeholder='Enter yiur comment here'></textarea>
+      </div>
+      <input id='submit' type='submit'/>
     </form>
   </body>
 </html>
