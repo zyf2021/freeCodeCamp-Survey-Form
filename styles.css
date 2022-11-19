@@ -1,0 +1,47 @@
+:root {
+    --color-white: #f3f3f3;
+    --color-darkblue: #1b1b32;
+    --color-darkblue-alpha: rgba(27, 27, 50, 0.3);
+    --color-green: #37af65;
+  }
+  
+  body{
+    background-color: pink;
+  }
+  
+  header{
+    background-color:var(--color-darkblue-alpha);
+    border-radius: 0.25rem;
+  }
+  
+  #title{
+    font-weight: 400;
+    line-height: 1.2;
+    text-align:center;
+    color: var(--color-white);
+  }
+  #description{
+    text-align:center;
+    color: var(--color-white);
+  }
+  #survey-form{
+    background: var(--color-darkblue-alpha);
+    border-radius: 0.25rem;
+  }
+  
+  
+  
+  label{
+    color:var(--color-white);
+    font-family:'Arial';
+    font-weight:550;
+    display:block;
+  }
+  
+  .group-form input, select, textarea{
+    width:100%;
+  }
+  
+  .group-form .inline{
+    width:unset;
+  }

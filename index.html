@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>HW</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <header>
@@ -9,19 +10,19 @@
     <p id="description">Thank you for taking the time to help us improve the platform</p>
     </header>
     <form id="survey-form">
-      <div>
+      <div class='group-form'>
         <label id="name-label">Name</label> 
         <input id="name" type="text" placeholder="Enter your name" require/>
       </div>
-      <div>
+      <div class='group-form'>
         <label id="email-label">Email</label> 
         <input id="email" type="email" placeholder="Enter your email"/>
       </div>
-      <div>
+      <div class='group-form'>
         <label id="number-label">Age (optional)</label> 
         <input id="number" type="number" min=14 max=95 placeholder="Enter your age"/>
       </div>
-      <div>
+      <div class='group-form'>
         <label id="dropdown-label">Which option best describes your current role?</label> 
         <select id="dropdown" type="text">
           <option>Select current role</option>
@@ -32,13 +33,13 @@
           <option>Other</option>
         </select>
       </div>
-      <div>
+      <div class='group-form'>
         <label>Would you recommend freeCodeCamp to a friend?</label>
-        <label><input type='radio' value='definitely'/> Definitely</label>
-        <label><input type='radio' value='maybe'/> Maybe</label>
-        <label><input type='radio' value='notsure'/> Not sure</label>
+        <label for='definitely'><input id='definitely' class='inline' type='radio' value='definitely'/> Definitely</label>
+        <label for='maybe'><input id='maybe'  class='inline' type='radio' value='maybe'/> Maybe</label>
+        <label for='notsure'><input id='notsure' class='inline' type='radio' value='notsure'/> Not sure</label>
       </div>
-      <div>
+      <div class='group-form'>
         <label>What is your favorite feature of freeCodeCamp?</label>
         <select>
           <option value='0'>Select an option</option>
@@ -48,21 +49,21 @@
           <option value='4'>Open Sources</option>
         </select>
       </div>
-      <div>
+      <div class='group-form'>
         <label>What would you like to see improved? <h6>(Check all that apply)</h6></label>
-        <label><input type='checkbox'/> Front-end Projects</label>
-        <label><input type='checkbox'/> Back-end Projects</label>
-        <label><input type='checkbox'/> Data Visualization</label>
-        <label><input type='checkbox'/> Challenges</label>
-        <label><input type='checkbox'/> Open Source Community</label>
-        <label><input type='checkbox'/> Gitter help rooms</label>
-        <label><input type='checkbox'/> Videos</label>
-        <label><input type='checkbox'/> City Meetups</label>
-        <label><input type='checkbox'/> Wiki</label>
-        <label><input type='checkbox'/> Forum</label>
-        <label><input type='checkbox'/> Additional Courses</label>
+        <label><input class='inline' type='checkbox'/> Front-end Projects</label>
+        <label><input class='inline' type='checkbox'/> Back-end Projects</label>
+        <label><input class='inline' type='checkbox'/> Data Visualization</label>
+        <label><input class='inline' type='checkbox'/> Challenges</label>
+        <label><input class='inline' type='checkbox'/> Open Source Community</label>
+        <label><input class='inline' type='checkbox'/> Gitter help rooms</label>
+        <label><input class='inline' type='checkbox'/> Videos</label>
+        <label><input class='inline' type='checkbox'/> City Meetups</label>
+        <label><input class='inline' type='checkbox'/> Wiki</label>
+        <label><input class='inline' type='checkbox'/> Forum</label>
+        <label><input class='inline' type='checkbox'/> Additional Courses</label>
       </div>
-      <div>
+      <div class='group-form'>
         <label></label>
         <textarea placeholder='Enter yiur comment here'></textarea>
       </div>
