@@ -27,6 +27,7 @@
   #survey-form{
     background: var(--color-darkblue-alpha);
     border-radius: 0.25rem;
+    padding: 0.5rem;
   }
   
   
@@ -36,12 +37,26 @@
     font-family:'Arial';
     font-weight:550;
     display:block;
+    padding-bottom:0.3rem;
   }
+  
+  .group-form{
+    padding-top:1rem;
+  }
+  
   
   .group-form input, select, textarea{
     width:100%;
   }
   
+  .group-form input, select{
+    height:2rem;
+    border: 0px;
+    border-radius:0.25rem;
+  }
+  
   .group-form .inline{
     width:unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
   }
